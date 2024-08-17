@@ -6,7 +6,7 @@ test('Checking website', async({page})=>{
     await page.waitForLoadState('networkidle');
     await page.getByRole('link',{name:'Telugu Movies 2024 Movies'}).click();
     await page.getByRole('link', { name: 'Home', exact: true }).click();
-}) , { retry: 4 };
+});
 
 test('Visibility', async({page})=>{
     await page.goto('https://www.watchmovierulz.ph/');
