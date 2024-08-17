@@ -7,6 +7,7 @@ test('Checking website', async({page})=>{
     await page.getByRole('link', { name: 'Telugu', exact: true }).click();
     await page.getByRole('link', { name: 'Telugu Movies 2024' });
     await page.getByRole('link', { name: 'Home', exact: true }).click();
+    
 }, {
     retries: {
       maxAttempts: 3,
