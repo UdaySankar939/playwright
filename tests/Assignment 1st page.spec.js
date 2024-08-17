@@ -16,6 +16,7 @@ await page.goto("https://www.google.co.in/");
 await page.waitForLoadState('networkidle');
 await expect(page).toHaveTitle("Google");
 await expect(page).toHaveURL("https://www.google.co.in/");
+await page.waitForLoadState('networkidle');
 });
 
 test('Checking Visibilities', async({page})=>{
