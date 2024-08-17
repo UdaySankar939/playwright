@@ -9,13 +9,13 @@ test('Download Page after searching', async({page})=>{
     });
     
     test('download link using filtering', async({page})=>{
-        await page.goto('https://www.watchmovierulz.ph/guntur-kaaram-2024-telugu/movie-watch-online-free-1755.html')
+        await page.goto('https://www.watchmovierulz.ph/guntur-kaaram-2024-telugu/movie-watch-online-free-1755.html');
         await page.waitForLoadState('networkidle');
         await page.locator('p').filter({ hasText: 'Guntur Kaaram Watch Online – DownloadGuntur Kaaram (2024) Telugu Full Movie' }).getByRole('link').click();
     });
     
     test('online stream link using filtering', async({page})=>{
-        await page.goto('https://www.watchmovierulz.ph/guntur-kaaram-2024-telugu/movie-watch-online-free-1755.html')
+        await page.goto('https://www.watchmovierulz.ph/guntur-kaaram-2024-telugu/movie-watch-online-free-1755.html');
         await page.waitForLoadState('networkidle');
         await page.locator('p').filter({ hasText: 'Guntur Kaaram Watch Online – StreamwishGuntur Kaaram (2024) Telugu Full Movie' }).getByRole('link').click();
     });
