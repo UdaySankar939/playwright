@@ -45,6 +45,4 @@ await page.waitForLoadState('networkidle');
 await page.getByLabel('Search', { exact: true }).fill('movierulz');
 await expect(page.getByRole('button',{name:'Google Search'})).toBeVisible();
 await page.goto('https://www.google.co.in/search?q=movierulz&sca_esv=53119dc2d4566d04&sca_upv=1&source=hp&ei=pZTAZueTBM3c2roP9fip2Qg&iflsig=AL9hbdgAAAAAZsCitamTcNxA9jMhSPcJOl44gVpL5obT&ved=0ahUKEwin-o7hgPyHAxVNrlYBHXV8KosQ4dUDCA8&uact=5&oq=&gs_lp=Egdnd3Mtd2l6IgBIAFAAWABwAHgAkAEAmAEAoAEAqgEAuAEDyAEAmAIAoAIAmAMAkgcAoAcA&sclient=gws-wiz');
-}) , { retry:2}
-
-git push -u origin main
+}) , { retry:2};
