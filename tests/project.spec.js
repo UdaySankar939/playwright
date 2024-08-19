@@ -91,13 +91,10 @@ test("second page", async({page})=>{
         await page.goto('https://www.saucedemo.com/v1/inventory-item.html?id=4');
         await page.getByRole('button', { name: 'ADD TO CART' }).click();
         await page.getByRole('button', { name: 'REMOVE' }).click();
-
-    });
+ });
 
     test("Logout", async({page})=>{
         await page.goto('https://www.saucedemo.com/v1/inventory-item.html?id=4');
         await page.getByRole('button', { name: 'Open Menu' }).click();
         await page.getByRole('link', { name: 'Logout' }).click();
-
-
     });
